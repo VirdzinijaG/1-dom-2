@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 uzduotis</title>
+    <style>
+        body {
+            display: flex;
+            padding: 100px 0;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input,
+        button {
+            padding: 0 20px;
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        input[type='color'] {
+            width: 100px;
+            height: 50px;
+            padding: 0;
+        }
+
+        span {
+            padding: 0 20px;
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-row">
+            <label for="message">Tavo zinutes tekstas</label>
+            <input id="message" type="text" />
+        </div>
+        <div class="form-row">
+            <label for="bg-color">Fono spalva</label>
+            <input id="bg-color" type="color" />
+        </div>
+        <div class="form-row">
+            <label for="text-color">Teksto spalva</label>
+            <input id="text-color" type="color" />
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div>Tu parasei: <span></span></div>
+
+
+    <script src="../js/11.js"></script>
+</body>
+
+</html>
