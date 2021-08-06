@@ -1,4 +1,5 @@
 @import './reset.css';
+@import './font-awesome.min.css';
 
 body {
    background-color: #6666;
